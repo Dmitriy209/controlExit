@@ -9,20 +9,20 @@ namespace controlExit
         {
             string stopMessage = null;
             string stopWord = "exit";
-            bool stopCycle = true;
+            bool canStopCycle = true;
 
             Console.WriteLine("Вы входите в заведение.\nЕсли хотите выйти напишите exit.");
 
-            while (stopCycle)
+            while (canStopCycle)
             {
                 Console.WriteLine("Мартышка хлопает в тарелки.");
                 Console.WriteLine("Введите стоп слово:");
 
                 stopMessage = Console.ReadLine();
 
-                stopCycle = stopWord != stopMessage;
+                canStopCycle = stopWord != stopMessage;
 
-                if (stopCycle == true)
+                if (canStopCycle == true)
                 {
                     Console.WriteLine("Вы ввели неверное стоп-слово.");
                 }
