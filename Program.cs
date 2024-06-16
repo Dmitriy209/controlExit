@@ -27,6 +27,7 @@ namespace controlExit
                     Console.WriteLine("Вы ввели неверное стоп-слово.");
                 }
             }
+
             Console.WriteLine("Вы покинули заведение и получили футболку в подарок.");
         }
     }
