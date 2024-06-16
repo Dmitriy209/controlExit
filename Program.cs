@@ -13,14 +13,16 @@ namespace controlExit
 
             Console.WriteLine("Вы входите в заведение.\nЕсли хотите выйти напишите exit.");
 
-            while (stopWord != stopMessage)
+            while (stopCycle)
             {
                 Console.WriteLine("Мартышка хлопает в тарелки.");
                 Console.WriteLine("Введите стоп слово:");
 
                 stopMessage = Console.ReadLine();
 
-                if (stopWord != stopMessage)
+                stopCycle = stopWord != stopMessage;
+
+                if (stopCycle == true)
                 {
                     Console.WriteLine("Вы ввели неверное стоп-слово.");
                 }
